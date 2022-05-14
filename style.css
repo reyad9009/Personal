@@ -6,11 +6,7 @@ body{
     background-color: aquamarine;
     font-family: "Poppins",sans-serif;
 }
-html{
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
+
 :root{
     --Header_color: #fff;
     --s1_bg_color: #f9f9ff;
@@ -190,38 +186,6 @@ a:hover{
     box-shadow:5px 10px 30px rgba(130,147,255, 0.5);
     transition: all 0.5s ease-in 0.1s;
 }
-@media (max-width: 767px){
-    .section1_texts h1{
-        font-size: 30px;
-        font-weight: 6400;
-        color: #222;
-    }
-    .section1_main{
-        height: auto;
-        margin-top: 110px;
-        display: block;
-        justify-content: center;
-        padding-bottom: 10px;
-    }
-    .section1_texts,
-    .section1_img{
-        width: auto;
-    }
-    .section1_texts{
-        margin-top: 10px;
-        line-height: 13px;
-        padding-left: 20px;
-    }
-    .section1_img{
-        margin-top: 35px;
-        box-sizing: border-box;
-    }
-    .section1_img img{
-        max-width: 70%;
-        height: auto;
-        margin-left: 50px;
-    }
-}
 /*============================= Section1 end =============================*/
 
 /*============================= Section2 start =============================*/
@@ -284,33 +248,6 @@ a:hover{
     transition: all 0.5s ease-in 0.1s;
     outline: none;
 }
-@media (max-width: 767px){
-    .section2_main{
-        width: fit-content;
-        height: auto;
-        display: block;
-        padding-bottom: 100px;
-    }
-    .section2_texts{
-        margin-top: 0px;
-        margin-left: 20px;
-        line-height: 30px;
-        width: 100%;
-    }
-    .section2_texts h1{
-        font-weight: bold;
-        font-size: 20px;
-    }
-    .section2_img{
-        width: 100%;
-        display: grid;
-        place-items: center;
-    }
-    .section2_img img{
-        width: 94%;
-        height: auto;
-    }
-}
 /*============================= Section2 end =============================*/
 
 /*============================= Section3 start =============================*/
@@ -350,7 +287,6 @@ a:hover{
     max-width: 320px;
     height: 200px;
     text-align: center;
-    background-color: tomato;
 }
 :is(.section3_texts, .box1) p{
     color: #777;
@@ -377,19 +313,7 @@ a:hover{
    color: #8490ff;
    transition: all 0.2s ease-in-out;
 }
-@media (max-width: 767px){
-    .section3_texts p{
-        padding: 0 15px;
-    }
-    .boxs1{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .box1{
-        padding: 0 60px;
-    }
-}
+
 /*============================= Section3 end =============================*/
 
 /*============================= Section4 start =============================*/
@@ -418,21 +342,6 @@ a:hover{
     font-size: 36px;
     color: #fff;
     font-weight: 700;
-}
-@media (max-width: 767px){
-    .section_4{
-        height: auto;
-    }
-    .section4_main{
-        flex-direction: column;
-        box-sizing: border-box;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .section4_texts{
-        text-align: center;
-        padding: 20px;
-    }
 }
 /*============================= Section4 end =============================*/
 
@@ -582,25 +491,7 @@ figure{
     padding-top: 10px;
     padding-bottom: 20px;
 }
-@media (max-width: 767px){
-    .section_5_texts{
-        text-align: center;
-        line-height: 40px;
-        box-sizing: border-box;
-        padding: 0 60px;
-    }
-    .section5_nav ul li{
-        padding: 10px;
-    }
-    .img_box1, .img_box2{
-        flex-direction: column;
-        align-items: center;
-    }
-    figure{
-        width: 370px;
-        height: 369px;
-    }
-}
+
 /*============================= Section5 end =============================*/
 
 /*============================= Section6 start =============================*/
@@ -665,32 +556,7 @@ figure{
     font-size: 14px;
     font-weight: 300;
 }
-@media (max-width: 767px){
-    .s6_text{
-        text-align: center;
-        box-sizing: border-box;
-        padding: 0 35px;
-    }
-    .s6_text h1{
-        font-size: 36px;
-        font-weight: 600;
-        color: #222222;
-        line-height: 45px;
-    }
-    .feedback_section{
-        flex-direction: column;
-        row-gap: 30px;
-        margin-top: 85px; 
-        justify-content: center;
-        align-items: center;  
-    }
-    .feedback1{
-        display: flex;
-        max-width: 450px;
-        border: 1px solid rgb(224, 224, 224);
-        box-shadow: 0 0 5px rgba(185, 185, 185, 0.7);
-    }
-}
+
 /*============================= Section6 end =============================*/
 
 /*============================= Section7 start =============================*/
@@ -831,17 +697,6 @@ figure{
     opacity: 0;
     visibility: hidden;
 }
-@media (max-width: 767px){
-    .section7_main_text p{
-        line-height: 25px;
-        max-width: 400px;
-    }
-    .section7_cards{
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
-    }
-}
 /*============================= Section7 end =============================*/
 
 /*============================= Section8 start =============================*/
@@ -951,19 +806,6 @@ figure{
     font-size: 14px;
     font-weight: 300;
 }
-@media (max-width: 767px){
-    .section8_main_text p{
-        max-width: 420px;
-    }
-    .section8_main_text h1{
-        max-width: 420px;
-    }
-    .section8_posts{
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
-    }
-}
 /*============================= Section8 end =============================*/
 
 /*============================= Section9 start =============================*/
@@ -987,15 +829,6 @@ figure{
 .section9_main img:hover{
     opacity: 1;
     transition: 0.3s;
-}
-@media (max-width: 767px){
-    .section9_main{
-        display: flex;
-        flex-direction: column;
-    }
-    .section9_main img{
-        padding: 20px 100px;
-    }
 }
 /*============================= Section9 end =============================*/
 
@@ -1063,7 +896,186 @@ figure{
 .section10_div3 div i:hover{
     color: #8490ff;
 }
-@media (max-width: 767px){
+/*============================= Footer end =============================*/
+
+/* mobile */
+@media only screen and (max-width: 1000px) {
+    body{
+        height: auto;
+    }
+    .section1_texts h1{
+        font-size: 30px;
+        font-weight: 6400;
+        color: #222;
+    }
+    .section1_main{
+        height: auto;
+        margin-top: 110px;
+        display: block;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    .section1_texts,
+    .section1_img{
+        width: auto;
+    }
+    .section1_texts{
+        margin-top: 10px;
+        line-height: 13px;
+        padding-left: 20px;
+    }
+    .section1_img{
+        margin-top: 35px;
+        box-sizing: border-box;
+    }
+    .section1_img img{
+        max-width: 70%;
+        height: auto;
+        margin-left: 50px;
+    }
+    /* s1 end */
+    /* s2 start */
+    .section2_main{
+        width: fit-content;
+        height: auto;
+        display: block;
+        padding-bottom: 100px;
+    }
+    .section2_texts{
+        margin-top: 0px;
+        margin-left: 20px;
+        line-height: 30px;
+        width: 100%;
+    }
+    .section2_texts h1{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .section2_img{
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .section2_img img{
+        width: 94%;
+        height: auto;
+    }
+    /* s2 end*/
+
+    /* s3 start*/
+    .section3_texts p{
+        padding: 0 15px;
+    }
+    .boxs1{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .box1{
+        padding: 0 60px;
+    }
+    /* s3 end*/
+
+    /* s4 start*/
+    .section_4{
+        height: auto;
+    }
+    .section4_main{
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .section4_texts{
+        text-align: center;
+        padding: 20px;
+    }
+    /* s4 end*/
+
+    /* s5 start*/
+    .section_5_texts{
+        text-align: center;
+        line-height: 40px;
+        box-sizing: border-box;
+        padding: 0 60px;
+    }
+    .section5_nav ul li{
+        padding: 10px;
+    }
+    .img_box1, .img_box2{
+        flex-direction: column;
+        align-items: center;
+    }
+    figure{
+        width: 370px;
+        height: 369px;
+    }
+    /* s5 end*/
+
+    /* s6 start*/
+    .s6_text{
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 35px;
+    }
+    .s6_text h1{
+        font-size: 36px;
+        font-weight: 600;
+        color: #222222;
+        line-height: 45px;
+    }
+    .feedback_section{
+        flex-direction: column;
+        row-gap: 30px;
+        margin-top: 85px; 
+        justify-content: center;
+        align-items: center;  
+    }
+    .feedback1{
+        display: flex;
+        max-width: 450px;
+        border: 1px solid rgb(224, 224, 224);
+        box-shadow: 0 0 5px rgba(185, 185, 185, 0.7);
+    }
+    /* s6 end*/
+
+    /* s7 start*/
+    .section7_main_text p{
+        line-height: 25px;
+        max-width: 400px;
+    }
+    .section7_cards{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    /* s7 end*/
+
+    /* s8 start*/
+    .section8_main_text p{
+        max-width: 420px;
+    }
+    .section8_main_text h1{
+        max-width: 420px;
+    }
+    .section8_posts{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    /* s8 end*/
+
+    /* s9 start*/
+    .section9_main{
+        display: flex;
+        flex-direction: column;
+    }
+    .section9_main img{
+        padding: 20px 100px;
+    }
+    /* s9 end*/
+
+    /* s10 start*/
     .section10_main{
         display: flex;
         flex-direction: column;
@@ -1071,8 +1083,7 @@ figure{
     .section10_div1, .section10_div2, .section10_div3{
         width: 450px;
     }
+    /* s10 end*/
 }
-/*============================= Footer end =============================*/
-
 
 
