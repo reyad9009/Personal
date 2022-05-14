@@ -999,16 +999,35 @@ figure{
         box-sizing: border-box;
         padding: 0 60px;
     }
+    .section_5_texts h1{
+        font-size: 70px;
+    }
+    .section_5_texts p{
+        font-size: 20px;
+    }
+    .section5_nav a{
+        font-size: 30px;
+    }
     .section5_nav ul li{
-        padding: 10px;
+        padding: 20px;
     }
     .img_box1, .img_box2{
         flex-direction: column;
         align-items: center;
     }
     figure{
-        width: 370px;
-        height: 369px;
+        width: 800px;
+        height: 799px;
+    }
+    .camera{
+    width: 98px;
+    height: 80px;
+    }
+    .main h1{
+        font-size: 40px;
+    }
+    .main p{
+        font-size: 35px;
     }
     /* s5 end*/
 
