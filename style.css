@@ -361,7 +361,7 @@ a:hover{
 }
 .section_5_texts{
     text-align: center;
-    line-height: 20px;
+    /*line hight: 20px;*/
     margin-top: 110px;
     padding-bottom: 73px;
 }
@@ -903,11 +903,6 @@ figure{
     body{
         height: auto;
     }
-    .section1_texts h1{
-        font-size: 30px;
-        font-weight: 6400;
-        color: #222;
-    }
     .section1_main{
         height: auto;
         margin-top: 110px;
@@ -915,64 +910,110 @@ figure{
         justify-content: center;
         padding-bottom: 10px;
     }
+    .section1_texts{
+        margin-top: 10px;
+        line-height: 13px;
+        padding-left: 40px;
+    }
     .section1_texts,
     .section1_img{
         width: auto;
     }
-    .section1_texts{
-        margin-top: 10px;
-        line-height: 13px;
-        padding-left: 20px;
+    .section1_texts h1{
+        font-size: 80px;
+    }
+    .section1_texts h3{
+        font-size: 50px;
+    }
+    .section1_texts p{
+        font-size: 30px;
+    }
+    .section1_texts button{
+        padding: 40px 100px;
+        font-size: 2rem;
     }
     .section1_img{
+        width: auto;
         margin-top: 35px;
         box-sizing: border-box;
     }
     .section1_img img{
-        max-width: 70%;
+        width: 1000px;
         height: auto;
-        margin-left: 50px;
+        margin-left: 0px;
     }
     /* s1 end */
     /* s2 start */
     .section2_main{
-        width: fit-content;
         height: auto;
         display: block;
         padding-bottom: 100px;
     }
     .section2_texts{
         margin-top: 0px;
-        margin-left: 20px;
+        margin-left: 0px;
         line-height: 30px;
         width: 100%;
     }
     .section2_texts h1{
         font-weight: bold;
-        font-size: 20px;
+        font-size: 80px;
     }
+    .section2_texts h3{
+        font-size: 50px;
+    }
+    .section2_texts p{
+        font-size: 30px;
+        max-width: fit-content;
+    }
+    .section2_texts button{
+        padding: 40px 100px;
+        font-size: 2rem;
+    }
+    
     .section2_img{
-        width: 100%;
-        display: grid;
-        place-items: center;
+        width: auto;
+        margin-top: 35px;
+        box-sizing: border-box;
+        background: tomato;
     }
     .section2_img img{
-        width: 94%;
+        width: 2000px;
         height: auto;
+        margin-left: 0px;
     }
     /* s2 end*/
 
     /* s3 start*/
+    .section3_texts{
+        text-align: center;
+    }
+    .section3_texts h1{
+        font-size: 100px;
+    }
     .section3_texts p{
-        padding: 0 15px;
+        font-size: 40px;
+        max-width: 100%;
     }
     .boxs1{
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 100px;
+        line-height: 50px;
     }
     .box1{
-        padding: 0 60px;
+        max-width: 920px;
+        height: 550px;
+    }
+    .box1 h3{
+        font-size: 70px;
+    }
+    .box1 p{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .box1 i{
+        font-size: 100px;
     }
     /* s3 end*/
 
@@ -988,14 +1029,19 @@ figure{
     }
     .section4_texts{
         text-align: center;
-        padding: 20px;
+        padding: 50px;
+    }
+    .section4_texts h1{
+        font-size: 100px;
+    }
+    .section4_texts p{
+        font-size: 50px;
     }
     /* s4 end*/
 
     /* s5 start*/
     .section_5_texts{
         text-align: center;
-        line-height: 40px;
         box-sizing: border-box;
         padding: 0 60px;
     }
@@ -1003,10 +1049,13 @@ figure{
         font-size: 70px;
     }
     .section_5_texts p{
-        font-size: 20px;
+        font-size: 50px;
     }
     .section5_nav a{
         font-size: 30px;
+    }
+    .section5_nav a:hover::after{
+        width: 50px;
     }
     .section5_nav ul li{
         padding: 20px;
