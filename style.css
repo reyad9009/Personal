@@ -762,6 +762,9 @@ figure{
 }
 .logo_name span{
     padding-left: 15px;
+    color: rgb(73, 73, 73);
+    font-size: 15px;
+    font-weight: 300;
 }
 .date_area{
     display: flex;
@@ -794,11 +797,6 @@ figure{
 :is(.section8_main_text, .postCard_bottom_text) P{
     color: #777;
     font-size: 14px;
-    font-weight: 300;
-}
-.logo_name span{
-    color: rgb(73, 73, 73);
-    font-size: 15px;
     font-weight: 300;
 }
 :is(.comment, .love) i{
@@ -951,8 +949,10 @@ figure{
     /* s2 start */
     .section2_main{
         height: auto;
+        margin-top: 110px;
         display: block;
-        padding-bottom: 100px;
+        justify-content: center;
+        padding-bottom: 10px;
     }
     .section2_texts{
         margin-top: 0px;
@@ -975,16 +975,13 @@ figure{
         padding: 40px 100px;
         font-size: 2rem;
     }
-    
     .section2_img{
         width: auto;
         margin-top: 35px;
-        box-sizing: border-box;
-        background: tomato;
+        background-color: tomato;
     }
     .section2_img img{
-        width: 2000px;
-        height: auto;
+        width: fit-content;
         margin-left: 0px;
     }
     /* s2 end*/
@@ -1179,7 +1176,7 @@ figure{
         font-size: 100px;
     }
     .section8_main_text p{
-        font-size: 30px;
+        font-size: 25px;
         max-width: 850px;
     }
     .section8_main_text h1{
@@ -1188,7 +1185,8 @@ figure{
     .section8_posts{
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 100px;
+        margin-top: 100px;
     }
     .posts_card{
         width: 850px;
@@ -1198,17 +1196,22 @@ figure{
         width: 850px;
         height: 512px;
     }
+    .details{
+        border-bottom: 1.5px solid #949393;
+        padding: 20px 0;
+    }
     .logo_name img{
-        width: 70%;
+        width: 100px;
     }
     .logo_name span{
         font-size: 35px;
+        width: fit-content;
     }
     .date_area span{
-        font-size: 30px;
+        font-size: 35px;
     }
     :is(.comment, .love) i{
-        font-size: 30px;
+        font-size: 35px;
     }
     /* s8 end*/
 
@@ -1218,17 +1221,37 @@ figure{
         flex-direction: column;
     }
     .section9_main img{
-        padding: 20px 100px;
+        width: 300px;
+        height: 200px;
     }
     /* s9 end*/
 
     /* s10 start*/
+    .section10{
+        display: block;
+    }
     .section10_main{
         display: flex;
         flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .section10_main h4{
+        font-size: 70px;
+    }
+    .section10_main p{
+        font-size: 35px;
+    }
+    .input_area input{
+        height: 120px;
+        font-size: 35px;
+        width: 98%;
+    }
+    .input_area button{
+        padding: 0.380rem 3.2rem;
     }
     .section10_div1, .section10_div2, .section10_div3{
-        width: 450px;
+        width: 100%;
     }
     /* s10 end*/
 }
