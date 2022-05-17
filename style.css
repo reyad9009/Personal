@@ -131,9 +131,7 @@ a:hover{
 }
 /**/
 .checkbtn{
-    display: none;
-    font-size: 45px;
-    color: rgba(0,0,0, 0.9);   
+    display: none; 
 }
 #check{
     display: none;
@@ -926,16 +924,15 @@ figure{
         height: 150px;
     }
     .personal_logo img{
-        width: 300px;
+        width: 400px;
         margin-left: 30px;
     }
     ul{
         display: none;
-        
     }
     a{
-        font-size: 35px;
-        color: #fff;   
+        font-size: 60px;
+        color: #fff;  
     }
     .nev{
         position: absolute;
@@ -943,14 +940,16 @@ figure{
     }
     .checkbtn{
         display: block;
-        margin-left: 900px;
+        margin-left: 870px;
         position: absolute;
         z-index: 20;
-        margin-top: -35px;
+        margin-top: -50px;
+        color: rgba(0,0,0, 0.9);  
+        font-size: 70px;
     }
     li{
         clear: both;
-        margin-top: 30px;
+        margin-top: 0px;
     }
     #check:checked ~ ul{
         display: block;
@@ -967,7 +966,7 @@ figure{
         position: absolute;
         z-index: -20;
         left: 0;
-        width: 50%;
+        width: 70%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.9);
     }
@@ -977,15 +976,28 @@ figure{
     .drop_down_menu{
         top: 600px;
         position:initial;
-        width: 400px;
+        width: 600px;
+        height: 220px;
         display: none;
-        height: 150px;
         padding-left: 0;
-        margin-left: 0px;
+        margin-left: 0;
+    }
+    .drop_down_menu_more{
+        top: 100px;
+        position:initial;
+        width: 600px;
+        height: 220px;
+        transition: all .1s;
+    }
+    .more:hover > .drop_down_menu_more{
+        top: 100px;
+        margin-left: 40px;
+        padding-left: 0;
+        margin-top: 20px;
+
     }
     :is(.blog, .pages):hover > .drop_down_menu{
         top: 500px;
-        opacity: 1;
         display: block;
         margin-left: 0px;
         box-sizing: border-box;
@@ -997,8 +1009,8 @@ figure{
     }
     :is(.drop_down_menu, .drop_down_menu_more) a{
         color: black;
-        font-size: 30px;
-        line-height: 60px;
+        font-size: 55px;
+        line-height: 100px;
         padding: 30px 30px;
     }
     /* s1 start */
