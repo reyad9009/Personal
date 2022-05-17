@@ -39,6 +39,9 @@ header{
     height: 70px;
     overflow: hidden;
 }
+.nev{
+    display: flex;
+}
 ul li{
     float: left;
     padding-top: 27px;
@@ -76,6 +79,7 @@ a:hover{
     align-items: flex-start;
     justify-content: center;
 }
+
 :is(.blog, .pages):hover > .drop_down_menu{
     top: 70px;
     margin-left: -130px;
@@ -125,6 +129,18 @@ a:hover{
     transition: all .5s;
     box-shadow: -21.213px 21.213px 30px 0 rgb(158 158 158 / 30%);
 }
+/**/
+.checkbtn{
+    display: none;
+    font-size: 45px;
+    color: rgba(0,0,0, 0.9);   
+}
+#check{
+    display: none;
+    margin-left: 920px;
+    position: absolute;
+}
+
 /*============================= Header end =============================*/
 
 /*============================= Section1 start =============================*/
@@ -902,13 +918,93 @@ figure{
 /*============================= Footer end =============================*/
 
 /* mobile */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 991px) {
     body{
         height: auto;
     }
+    .header_section{
+        height: 150px;
+    }
+    .personal_logo img{
+        width: 300px;
+        margin-left: 30px;
+    }
+    ul{
+        display: none;
+        
+    }
+    a{
+        font-size: 35px;
+        color: #fff;   
+    }
+    .nev{
+        position: absolute;
+        z-index: 20;
+    }
+    .checkbtn{
+        display: block;
+        margin-left: 900px;
+        position: absolute;
+        z-index: 20;
+        margin-top: -35px;
+    }
+    li{
+        clear: both;
+        margin-top: 30px;
+    }
+    #check:checked ~ ul{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: -90px;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 1000px;
+        height: 1900px;
+    }
+    #check:checked ~ ul::before{
+        content: '';
+        position: absolute;
+        z-index: -20;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    #check:checked ~ .checkbtn{
+        color: #fff;
+    }
+    .drop_down_menu{
+        top: 600px;
+        position:initial;
+        width: 400px;
+        display: none;
+        height: 150px;
+        padding-left: 0;
+        margin-left: 0px;
+    }
+    :is(.blog, .pages):hover > .drop_down_menu{
+        top: 500px;
+        opacity: 1;
+        display: block;
+        margin-left: 0px;
+        box-sizing: border-box;
+        padding-top: 10px;
+        margin-top: 30px;
+    }
+    .drop_down_menu a:hover{
+        color: #8490ff;
+    }
+    :is(.drop_down_menu, .drop_down_menu_more) a{
+        color: black;
+        font-size: 30px;
+        line-height: 60px;
+        padding: 30px 30px;
+    }
+    /* s1 start */
     .section1_main{
         height: auto;
-        margin-top: 110px;
+        margin-top: 200px;
         display: block;
         justify-content: center;
         padding-bottom: 10px;
