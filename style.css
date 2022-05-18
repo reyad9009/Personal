@@ -222,7 +222,7 @@ a:hover{
     margin-top: 140px;
 }
 .section2_img img{
-    max-width: 540px;
+    max-width: 100%;
     height: auto;
 }
 .section2_texts{
@@ -1014,6 +1014,16 @@ figure{
         padding: 30px 30px;
     }
     /* s1 start */
+    :root{
+        --btn: 2.8rem;
+        --h1-80px: 80px;
+        --h3-50px: 50px;
+        --p-30px: 30px;
+        --s2h1-50px: 50px;
+        --s2h3-12px: 12px;
+        --s2p-10px: 10px;
+        --i-MOS-s3: 100px;
+    }
     .section1_main{
         height: auto;
         margin-top: 200px;
@@ -1031,17 +1041,17 @@ figure{
         width: auto;
     }
     .section1_texts h1{
-        font-size: 80px;
+        font-size: var(--h1-80px);
     }
     .section1_texts h3{
-        font-size: 50px;
+        font-size: var(--h3-50px);
     }
     .section1_texts p{
-        font-size: 30px;
+        font-size: var(--p-30px);
     }
     .section1_texts button{
         padding: 40px 100px;
-        font-size: 2rem;
+        font-size: var(--btn);
     }
     .section1_img{
         width: auto;
@@ -1055,54 +1065,66 @@ figure{
     }
     /* s1 end */
     /* s2 start */
+    .section2{
+        display: flex;
+        justify-content: left;
+        margin: 0;
+        padding: 0;
+    }
     .section2_main{
+        width: 100%;
         height: auto;
         margin-top: 110px;
         display: block;
-        justify-content: center;
-        padding-bottom: 10px;
+        padding-bottom: 100px;
+        margin-left: 0px;
     }
     .section2_texts{
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 40px;
         line-height: 30px;
-        width: 100%;
+        width: auto;
+        margin-right: 40px;
+
     }
     .section2_texts h1{
         font-weight: bold;
-        font-size: 80px;
+        font-size: var(--h1-80px);
     }
     .section2_texts h3{
-        font-size: 50px;
+        font-size: var(--h3-50px);
     }
     .section2_texts p{
-        font-size: 30px;
+        font-size: var(--p-30px);
         max-width: fit-content;
+        line-height: 50px;
     }
     .section2_texts button{
         padding: 40px 100px;
-        font-size: 2rem;
+        font-size: var(--btn);
     }
     .section2_img{
         width: auto;
         margin-top: 35px;
-        background-color: tomato;
     }
     .section2_img img{
-        width: fit-content;
-        margin-left: 0px;
+        width: 100%;
+        height: auto;
     }
     /* s2 end*/
 
     /* s3 start*/
     .section3_texts{
         text-align: center;
+        margin-right: 40px;
+        margin-left: 40px;
     }
     .section3_texts h1{
-        font-size: 100px;
+        font-size: var(--h1-80px);
+        line-height: 120px;
     }
     .section3_texts p{
-        font-size: 40px;
+        font-size: var(--p-30px);
         max-width: 100%;
     }
     .boxs1{
@@ -1112,18 +1134,46 @@ figure{
         line-height: 50px;
     }
     .box1{
-        max-width: 920px;
+        max-width: 900px;
         height: 550px;
+        box-shadow: 0 0 8px #8490ff;
+        box-sizing: border-box;
+        padding-top: 75px;
+        position: relative;
+        overflow: hidden;
+    }
+    .box1::after{
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: #8490ff;
+        border-radius: 50%;
+        right: -50px;
+        top: 450px;
+        transition: all 0.3s;
+        z-index: 0;
+    }
+    .box1:hover::after{
+        width: 1000px;
+        height: 1000px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; 
+        border-radius: 0%;
+        
     }
     .box1 h3{
-        font-size: 70px;
+        font-size: var(--h3-50px);
     }
     .box1 p{
-        font-size: 40px;
+        font-size: var(--p-30px);
         line-height: 40px;
+        padding: 0 20px;
     }
     .box1 i{
-        font-size: 100px;
+        font-size: var(--i-MOS-s3);
     }
     /* s3 end*/
 
@@ -1142,24 +1192,25 @@ figure{
         padding: 50px;
     }
     .section4_texts h1{
-        font-size: 100px;
+        font-size: var(--h1-80px);
     }
     .section4_texts p{
-        font-size: 50px;
+        font-size: var(--p-30px);
     }
     /* s4 end*/
 
     /* s5 start*/
     .section_5_texts{
         text-align: center;
-        box-sizing: border-box;
-        padding: 0 60px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     .section_5_texts h1{
-        font-size: 70px;
+        font-size: var(--h1-80px);
+        line-height: 100px;
     }
     .section_5_texts p{
-        font-size: 30px;
+        font-size: var(--p-30px);
     }
     .section5_nav a{
         font-size: 30px;
