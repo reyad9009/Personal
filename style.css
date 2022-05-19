@@ -42,23 +42,23 @@ header{
 .nev{
     display: flex;
 }
-ul li{
+header ul li{
     float: left;
     padding-top: 27px;
     padding-bottom: 27px;
     list-style: none;
     margin-left: 28px;
 }
-a{
+header ul li a{
     text-decoration: none;
     font-size: 12px;
     color: #222;
     text-transform: uppercase;
     font-weight: 500;
-}
-a:hover{
-    color: #8490ff;
     transition: 0.3s all;
+}
+header ul li a:hover{
+    color: #8490ff;
 }
 .drop_down_menu{
     position: absolute;
@@ -66,7 +66,7 @@ a:hover{
     margin-left: -130px;
     opacity:0;
     visibility:hidden;
-    transition: 0.8s all 0.3s ;
+    transition: 0.3s;
     background-color: #fff;
     box-shadow: 0 0 30px rgb(127 137 161 / 25%);
     border-radius: 2px;
@@ -79,13 +79,11 @@ a:hover{
     align-items: flex-start;
     justify-content: center;
 }
-
 :is(.blog, .pages):hover > .drop_down_menu{
     top: 70px;
     margin-left: -130px;
     opacity: 1;
     visibility: visible;
-    transition: 0.3s;
 }
 :is(.drop_down_menu, .drop_down_menu_more) li{
     position: relative;
@@ -104,7 +102,7 @@ a:hover{
     position: absolute;
     top: -2px;
     margin-left: -240px;
-    transition: 1s all 1s;
+    transition: 0.3s;
     opacity: 0;
     visibility: hidden;
     background-color: #fff;
@@ -123,13 +121,12 @@ a:hover{
     margin-left: -215px;
     opacity: 1;
     visibility: visible;
-    transition: 0.3s;
 }
 .after-scroll-navbar{/*for JavaScript style in Header*/
     transition: all .5s;
     box-shadow: -21.213px 21.213px 30px 0 rgb(158 158 158 / 30%);
 }
-/**/
+/*for Responsive mobile*/
 .checkbtn{
     display: none; 
 }
@@ -138,7 +135,6 @@ a:hover{
     margin-left: 920px;
     position: absolute;
 }
-
 /*============================= Header end =============================*/
 
 /*============================= Section1 start =============================*/
@@ -150,9 +146,9 @@ a:hover{
 .section1_main{
     max-width: 1110px;
     height: 612px;
-    margin-top: 140px;
     display: flex;
     justify-content: space-between;
+    margin-top: 140px;
     overflow: hidden;
 }
 .section1_texts,
@@ -172,9 +168,10 @@ a:hover{
     line-height: 13px;
 }
 .section1_texts h3{
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
-    font-size: 14px;
+    
 }
 .section1_texts h1{
     font-size: 60px;
@@ -190,15 +187,15 @@ a:hover{
 .section1_texts button{
     padding: 12px 25px;
     outline: none;
-    color: #fff;
     border: none;
-    background: linear-gradient(90deg, #8490ff 0%,#62bdfc 100%);
+    color: #fff;
     font-size: 0.9rem;
+    background: linear-gradient(90deg, #8490ff 0%,#62bdfc 100%);
+    transition: all 0.5s ease-in 0.1s;
     cursor: pointer;
 }
 .section1_texts button:hover{
     box-shadow:5px 10px 30px rgba(130,147,255, 0.5);
-    transition: all 0.5s ease-in 0.1s;
 }
 /*============================= Section1 end =============================*/
 
@@ -225,19 +222,19 @@ a:hover{
     max-width: 100%;
     height: auto;
 }
-.section2_texts{
-    margin-top: 160px;
-    margin-left: 120px;
+.section2_texts{/*margin T,R,B,L*/
+    margin: 160px 0 0 120px;
     line-height: 40px;
 }
 .section2_texts h3{
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
-    font-size: 14px;
 }
 .section2_texts h1{
-    font-weight: bold;
     font-size: 36px;
+    font-weight: bold;
+
 }
 .section2_texts p{
     color: #777;
@@ -247,19 +244,18 @@ a:hover{
     margin-top: 40px;
 }
 .section2_texts button{
-    font-size: 0.9rem;
-    padding: 12px 28px;
-    outline: none;
     color: white;
-    background: linear-gradient(90deg, #8490ff 0%,#62bdfc 100%);
-    border: none;
+    font-size: 0.9rem;
     font-weight: 500;
+    padding: 12px 28px;
     margin-top: 10px;
+    outline: none;
+    border: none;
+    background: linear-gradient(90deg, #8490ff 0%,#62bdfc 100%);
+    transition: all 0.5s ease-in 0.1s;
 }
 .section2_texts button:hover{
     box-shadow:5px 10px 30px rgba(130,147,255, 0.5);
-    transition: all 0.5s ease-in 0.1s;
-    outline: none;
 }
 /*============================= Section2 end =============================*/
 
@@ -294,7 +290,7 @@ a:hover{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 60px;
+    gap: 60px;
 }
 .box1{
     max-width: 320px;
@@ -311,10 +307,10 @@ a:hover{
     font-size: 36px;
     color: rgba(0,0,0, 0.7);
     padding-bottom: 10px;
+    transition: all 0.1s ease-in-out;
 }
 .box1:hover i{
     color: #62bdfc;
-    transition: all 0.1s ease-in-out;
 }
 .box1 h3{
     font-size: 18px;
@@ -324,7 +320,6 @@ a:hover{
 }
 .box1:hover h3{
    color: #8490ff;
-   transition: all 0.2s ease-in-out;
 }
 
 /*============================= Section3 end =============================*/
@@ -340,9 +335,9 @@ a:hover{
 }
 .section4_main{
     display: flex;
-    column-gap: 175px;  
     flex-wrap: wrap;
     justify-content: center;
+    column-gap: 175px;
 }
 .section4_texts{
     text-align: center;
@@ -374,13 +369,12 @@ a:hover{
 }
 .section_5_texts{
     text-align: center;
-    /*line hight: 20px;*/
     margin-top: 110px;
     padding-bottom: 73px;
 }
 .section_5_texts h1{
-    font-size: 36px;
     color: #222222;
+    font-size: 36px;
     font-weight: 600;
 }
 .section_5_texts p{
@@ -392,10 +386,10 @@ a:hover{
 }
 .section5_nav{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
-    flex-wrap: wrap;
+    padding-bottom: 53px;
 }
 .section5_nav ul{
     margin: 0;
@@ -734,6 +728,7 @@ figure{
     max-width: fit-content;
     font-size: 14px;;
     color: #777;
+    padding: 0 30px;
 }
 .section8_main_text h1{
     font-size: 36px;
@@ -930,7 +925,7 @@ figure{
         width: 400px;
         margin-left: 30px;
     }
-    ul{
+    header ul{
         display: none;
     }
     a{
@@ -950,7 +945,7 @@ figure{
         color: rgba(0,0,0, 0.9);  
         font-size: 70px;
     }
-    li{
+    header ul li{
         clear: both;
         margin-top: 10px;
     }
@@ -1023,7 +1018,7 @@ figure{
         --h3-50px: 50px;
         --p-30px: 30px;
         --i-MOS-s3: 100px;
-        --lh-p-50x: 50px;
+        --lh-p-50x: 60px;
     }
     .section1_main{
         height: auto;
@@ -1116,6 +1111,10 @@ figure{
     /* s2 end*/
 
     /* s3 start*/
+    .section3_main{
+        margin-bottom: 100px;
+    }
+
     .section3_texts{
         text-align: left;
         margin: 50px 40px 0 40px;
@@ -1146,6 +1145,9 @@ figure{
         position: relative;
         overflow: hidden;
         box-sizing: border-box;
+        padding: 0 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
     .box1::after{
         content: '';
@@ -1169,10 +1171,10 @@ figure{
         opacity: 0.8;
     }
     .box1 h3{
-        font-size: var(--h3-50px);
+        font-size: 60px;
     }
     .box1 p{
-        font-size: var(--p-30px);
+        font-size: 40px;
         line-height: var(--lh-p-50x);
     }
     .box1 i{
@@ -1205,7 +1207,7 @@ figure{
 
     /* s5 start*/
     .section_5_texts{
-        text-align: center;
+        text-align: left;
         box-sizing: border-box;
         padding: 0 35px;
         margin: 150px 40px 0 40px;
@@ -1213,11 +1215,28 @@ figure{
     .section_5_texts h1{
         font-size: var(--h1-80px);
         line-height: 100px;
-        text-align: center;
     }
     .section_5_texts p{
         font-size: var(--p-30px);
         font-weight: 300;
+    }
+    .section5_nav{
+        margin-top: 100px;
+    }
+    .section5_nav a{
+        font-size: 35px;
+    }
+    
+    .section5_nav a::after{
+        bottom: -10px;
+    }
+    .section5_nav a:hover::after{
+        width: 60px;
+        height: 3px;
+        background-color: #8490ff;
+    }
+    .s5_img_section{
+        margin-top: 100px;
     }
     .img_box1, .img_box2{
         flex-direction: column;
@@ -1232,11 +1251,12 @@ figure{
     height: 80px;
     }
     .main h1{
-        font-size: 40px;
+        font-size: 50px;
     }
     .main p{
-        font-size: var(--p-30px);
+        font-size: 40px;
     }
+   
     /* s5 end*/
 
     /* s6 start*/
@@ -1252,7 +1272,6 @@ figure{
     .s6_text h1{
         font-size: var(--h1-80px);
         line-height: 100px;
-        text-align: center;
     }
     .s6_text p{
         font-size: var(--p-30px);
@@ -1294,7 +1313,6 @@ figure{
     }
     .section7_main_text h1{
         font-size: var(--h1-80px);
-        text-align: center;
     }
     .section7_main_text p{
         line-height: var(--lh-p-50x);
@@ -1327,7 +1345,7 @@ figure{
         font-size: 70px;
     }
     :is(.card_texts1, .card_texts2) p{
-        font-size: var(--p-30px);
+        font-size: 40px;
     }
     .card_texts2 {
         width: 80%;
@@ -1358,6 +1376,7 @@ figure{
         font-size: var(--p-30px);
         max-width: fit-content;
         line-height: var(--lh-p-50x);
+        padding: 0;
     }
     .section8_posts{
         display: flex;
@@ -1381,11 +1400,11 @@ figure{
         width: 100px;
     }
     .logo_name span{
-        font-size: var(--p-30px);
+        font-size: 35px;
         width: fit-content;
     }
     .date_area span{
-        font-size:  var(--p-30px);
+        font-size:  35px;
     }
     .postCard_bottom_text p{
         font-size: var(--p-30px);
