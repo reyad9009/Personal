@@ -85,19 +85,6 @@ header ul li a:hover{
     opacity: 1;
     visibility: visible;
 }
-:is(.drop_down_menu, .drop_down_menu_more) li{
-    position: relative;
-    float: none;
-    display: list-item;
-    margin: 0;
-    padding:0;
-}
-:is(.drop_down_menu, .drop_down_menu_more) a{
-    line-height: 32px;
-    font-size: 11px;
-    text-decoration: none;
-    font-weight: 500;
-}
 .drop_down_menu_more{
     position: absolute;
     top: -2px;
@@ -121,6 +108,20 @@ header ul li a:hover{
     margin-left: -215px;
     opacity: 1;
     visibility: visible;
+}
+:is(.drop_down_menu, .drop_down_menu_more) li{
+    position: relative;
+    float: none;
+    display: list-item;
+    margin: 0;
+    padding:0;
+}
+:is(.drop_down_menu, .drop_down_menu_more) a{
+    color: #222;
+    line-height: 32px;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: 500;
 }
 .after-scroll-navbar{/*for JavaScript style in Header*/
     transition: all .5s;
@@ -918,6 +919,7 @@ figure{
     body{
         height: auto;
     }
+    /* header start*/
     .header_section{
         height: 150px;
     }
@@ -928,7 +930,7 @@ figure{
     header ul{
         display: none;
     }
-    a{
+    header ul li a{
         font-size: 60px;
         color: #fff;  
     }
@@ -969,7 +971,7 @@ figure{
         background-color: rgba(0, 0, 0, 0.9);
     }
     #check:checked ~ .checkbtn{
-        color: #fff;
+        color: #8490ff;
     }
     .drop_down_menu{
         top: 600px;
@@ -1006,11 +1008,12 @@ figure{
         color: #8490ff;
     }
     :is(.drop_down_menu, .drop_down_menu_more) a{
-        color: black;
-        font-size: 55px;
-        line-height: 100px;
-        padding: 30px 30px;
+            color: #222222;
+            font-size: 55px;
+            line-height: 100px;
+            padding: 30px 30px;
     }
+    /*header end*/
     /* s1 start */
     :root{
         --btn: 2.8rem;
